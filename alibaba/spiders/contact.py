@@ -47,7 +47,7 @@ class ContactSpider(scrapy.Spider):
         )
         self.cur = self.client.cursor()
         # startUrls
-        sql = "select id,url from company where name like '%guangzhou%' and id <= {} and id > {}".format(settings.END, settings.START)
+        sql = "select id,url from company where id <= {} and id > {}".format(settings.END, settings.START)
         try:
             self.cur.execute(sql)
             results = self.cur.fetchall()
