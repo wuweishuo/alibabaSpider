@@ -53,7 +53,7 @@ DOWNLOAD_DELAY = 0.25
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
-FIREFOX_WEBDRIVER_PATH = "F:\python\python-3.5.3\Scripts\geckodriver.exe"
+FIREFOX_WEBDRIVER_PATH = ".\geckodriver.exe"
 DOWNLOADER_MIDDLEWARES = {
    'alibaba.middlewares.ContactDownloaderMiddleware': 300,
    'alibaba.middlewares.SeleniumDownloaderMiddleware': 543,
